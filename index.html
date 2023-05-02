@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Slice</title>
+    <link rel="stylesheet" href="/assets/scss/style.css" />
+  </head>
+
+  <body>
+    <div class="main-container flex flex-col">
+      <!-- MENU FOR MOBILE -->
+      <div class="menu-mobile">
+        <div class="menu-info flex flex-col ali-center jc-center">
+          <div class="profile"><img src="/assets/img/profile.png" alt="" /></div>
+          <div>Nome: Pippo</div>
+          <div>Position: CEO</div>
+          <div>Codice Badge: #####</div>
+          <div>Data: Aprile 20 2023</div>
+        </div>
+      </div>
+
+      <!-- CONTAINER MENU -->
+      <div class="container-menu flex flex-col">
+        <div class="menu" onclick="active()"><img src="assets/img/menu.png" alt="" /></div>
+
+        <div class="container-logo">
+          <img src="assets/img/logo.png" />
+          <h1>Pizza Slice</h1>
+
+          <!-- MENU FOR DESKTOP -->
+          <div class="menu-desktop">
+            <div class="menu-info flex flex-col ali-center jc-center">
+              <div class="profile">
+                <img src="/assets/img/profile.png" alt="" />
+                <div>Nome: Pippo</div>
+                <div>Position: CEO</div>
+                <div>Codice Badge: #####</div>
+                <div>Data: Aprile 20 2023</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CONTAINER -->
+      <div class="container flex flex-col">
+        <!-- CONTAINER-CARD -->
+        <div class="container-card">
+          <!-- CARD 1 -->
+          <div class="card" id="card1">
+            <div class="top flex flex-row jc-end">
+              <div class="stroke">
+                <p>WEEK</p>
+              </div>
+            </div>
+            <div class="center grafic flex jc-center">
+              <img src="/assets/img/grafico1.png" />
+            </div>
+            <div class="bottom flex flex-row jc-space-between ali-center">
+              <div class="left-info">
+                <p>Entrate</p>
+                <p>Uscite</p>
+              </div>
+              <div class="right-info">
+                <p><large>25%</large></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="card" id="card2">
+            <div class="top flex flex-row jc-space-between ali-center">
+              <div class="right-info" id="total-deliver">
+                <p>36,569</p>
+              </div>
+              <div class="left-info stroke">
+                <p>WEEK</p>
+              </div>
+            </div>
+            <div class="center">
+              <img src="/assets/img/grafico2.png" alt="" />
+            </div>
+            <div class="bottom grid grid-col-2 grid-row-2">
+              <div class="deliver flex jc-space-between" id="fisico">
+                <p>Fisico</p>
+                <p>47</p>
+              </div>
+              <div class="deliver flex jc-space-between" id="justeat">
+                <p>Just Eat</p>
+                <p>25</p>
+              </div>
+              <div class="deliver flex jc-space-between" id="deliveroo">
+                <p>Deliveroo</p>
+                <p>34</p>
+              </div>
+              <div class="deliver flex jc-space-between" id="glovo">
+                <p>glovo</p>
+                <p>29</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="card" id="card3">
+            <div class="top flex flex-row jc-end">
+              <div class="stroke">
+                <p>WEEK</p>
+              </div>
+            </div>
+            <div class="center">
+              <img src="/assets/img/grafico3.png" alt="" />
+            </div>
+            <div class="bottom flex flex-row jc-space-around">
+              <p>10%</p>
+              <p>20%</p>
+              <p>30%</p>
+              <p>40%</p>
+              <p>50%</p>
+            </div>
+          </div>
+          <!-- CARD 4 -->
+          <div class="card flex flex-row" id="card4">
+            <div class="percent flex flex-col ali-center">
+              <p>10%</p>
+              <p>20%</p>
+              <p>30%</p>
+              <p>40%</p>
+              <p>50%</p>
+              <p>60%</p>
+              <p>70%</p>
+              <p>80%</p>
+              <p>90%</p>
+              <p>100%</p>
+            </div>
+            <div class="grafico">
+              <img src="/assets/img/grafico4.png" alt="" />
+              <div class="flex flex-row jc-space-around" id="ingridients">
+                <p>Farina</p>
+                <p>Polpa</p>
+                <p>Liev</p>
+                <p>Prosc</p>
+                <p>Tonno</p>
+                <p>Funghi</p>
+                <p>Melan</p>
+                <p>Mozza</p>
+                <p>Origano</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CONTAINER-MINICARD -->
+
+        <div class="container-minicard flex flex-row">
+          <div class="minicard flex flex-col" id="minicard1">
+            <div class="center">
+              <p>MARGHERITA</p>
+              <img src="/assets/img/pizza1.png" alt="" />
+            </div>
+            <div class="bottom flex flex-row jc-space-between">
+              <div class="left-info">
+                <p>Ordini</p>
+                <p>34</p>
+              </div>
+              <div class="right-info">
+                <p>Entrate</p>
+                <p>456</p>
+              </div>
+            </div>
+          </div>
+          <div class="minicard flex flex-col" id="minicard2">
+            <div class="center">
+              <p>MARGHERITA</p>
+              <img src="/assets/img/pizza1.png" alt="" />
+            </div>
+            <div class="bottom flex flex-row jc-space-between">
+              <div class="left-info">
+                <p>Ordini</p>
+                <p>34</p>
+              </div>
+              <div class="right-info">
+                <p>Entrate</p>
+                <p>456</p>
+              </div>
+            </div>
+          </div>
+          <div class="minicard flex flex-col" id="minicard3">
+            <div class="center">
+              <p>MARGHERITA</p>
+              <img src="/assets/img/pizza1.png" alt="" />
+            </div>
+            <div class="bottom flex flex-row jc-space-between">
+              <div class="left-info">
+                <p>Ordini</p>
+                <p>34</p>
+              </div>
+              <div class="right-info">
+                <p>Entrate</p>
+                <p>456</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function active() {
+        let x = document.querySelector(".menu-mobile");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
