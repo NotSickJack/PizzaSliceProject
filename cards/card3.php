@@ -33,5 +33,3 @@ FROM ordine WHERE luogo_ordine = 'sud ovest';";
 $dati_sud_ovest = $mysqli->query($sud_ovest) or die ("<h3>Errore SQL 1:</h3><p>$sud_ovest</p>");
 $ordine_sud_ovest = $dati_sud_ovest->fetch_array();
 $numero_sud_ovest=$ordine_sud_ovest["num_ordini"];
-?>
-

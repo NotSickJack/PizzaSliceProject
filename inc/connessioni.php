@@ -4,7 +4,7 @@
 $host = "localhost"; /* indirizzo/nome dominio del server*/
 $user = "root"; /* Super user di Mamp*/
 $psw = ""; /* password super user root di Mamp*/
-$db = "pizza_slice"; /*nome esatto del database*/
+$db = "pizza"; /*nome esatto del database*/
 // connessione a MySQL con l'estensione MySQLi
 $mysqli = new mysqli($host, $user, $psw, $db); 
 // verifica dell'avvenuta connessione
@@ -20,4 +20,3 @@ else {
 }
 // chiusura della connessione
 //$mysqli->close();
-?>

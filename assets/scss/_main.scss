@@ -1,13 +1,30 @@
 @import "var.scss";
 
-.body{
+body {
     background-color: $black;
-    height: 100%;
+    height: 100vh;
+    font-family: "tahoma";
 }
-.menu-desktop{
+
+p {
+    font-size: $f-medium;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: $f-large;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: $f-medium;
+}
+
+.menu-desktop {
     display: none;
 }
-.menu-mobile{
+
+.menu-mobile {
     display: none;
     position: fixed;
     background-color: $black;
@@ -15,23 +32,25 @@
     height: 100%;
     top: 0;
     z-index: 99;
-    
-    .profile{
-        img{
+
+    .profile {
+        img {
             width: 80px;
         }
     }
-    .menu-info{
+
+    .menu-info {
         gap: 20px;
         height: 100%;
         font-size: $f-large;
     }
 }
-.active{
+
+.active {
     display: block;
 }
 
-.main-container{
+.main-container {
     padding: 10px;
     background-color: $black;
     height: 100%;
@@ -40,18 +59,22 @@
     color: $light-orange;
     font-size: $f-small;
 }
-.container-menu{
+
+.container-menu {
     width: 100%;
-    .container-logo{
+
+    .container-logo {
         text-align: center;
-        h1{
-            margin:10px;
+
+        h1 {
+            margin: 10px;
             font-size: $f-Xlarge;
         }
     }
-    .menu{
+
+    .menu {
         z-index: 99;
-        position:relative;
+        position: relative;
         top: 40px;
         padding: 0px 20px;
         overflow: hidden;
@@ -59,7 +82,7 @@
 }
 
 .canvasjs-chart-canvas {
-z-index: 0;
+    z-index: 0;
 }
 
 
@@ -76,9 +99,9 @@ z-index: 0;
 //         width: 100%;
 //     }
 // }
-.card{
+.card {
     // display: flex;
-    background-color:$red;
+    background-color: $red;
     // width: 80vw;
     margin: 16px 0px;
     align-items: center;
@@ -86,27 +109,30 @@ z-index: 0;
     border-radius: 10px;
     justify-content: center;
 }
-#card2{
+
+#card2 {
     display: flex;
 
-    }
-    
+}
+
 // }
 
-#card4{
+#card4 {
     font-size: $f-xxs;
-    height: 100%;
 }
-.container-minicard{
-    overflow:auto;
+
+.container-minicard {
+    overflow: auto;
     gap: 16px;
     width: 80vw;
-    .minicard{    
-        background-color:$red;
+
+    .minicard {
+        background-color: $red;
         text-align: center;
         padding: 20px;
         border-radius: 10px;
-        img{
+
+        img {
             margin-top: 5px;
         }
     }
@@ -116,4 +142,15 @@ z-index: 0;
     display: none;
 }
 
+.hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
 
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.flex-row {
+    flex-direction: column;
+}
